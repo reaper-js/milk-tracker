@@ -4,8 +4,8 @@
     "slug": "milk-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/images/milk.png",
+    "scheme": "milk-tracker",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -13,9 +13,11 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/milk.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.bobsled.milktracker",
+      "foregroundServiceType": ["dataSync"]
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +38,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6134d6c1-9302-4e35-bb5f-89a108c1fbd5"
+      }
     }
   }
 }
